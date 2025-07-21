@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 // import { push, ref, serverTimestamp } from 'firebase/database';
 // import { realtimeDb } from '../../firebase.ts';
 
-// TODO: 방명록 기능 사용시, realtime db에 guestbook 추가
+// TODO: 保存姓名、留言内容、创建时间和填写日期。
 // const guestbookRef = ref(realtimeDb, 'guestbook');
 
 const CommentForm = () => {
@@ -12,10 +12,10 @@ const CommentForm = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     if (!name || !message) {
-      alert('이름과 메시지를 채워주세요. 🥹');
+      alert('请填写姓名和留言内容。 🥹');
     } else {
       e.preventDefault();
-      // TODO: 이름, 메시지, 생성시간, 작성날짜 저장.
+      // TODO: 保存姓名、留言内容、创建时间和填写日期。
       // const guestbookMessage = {
       //   sender: name,
       //   message: message,
@@ -24,7 +24,7 @@ const CommentForm = () => {
       // };
       // void push(guestbookRef, guestbookMessage);
       //
-      // alert('메시지를 보냈습니다. 💌');
+      // alert('消息已发送. 💌');
       setName('');
       setMessage('');
     }
@@ -33,17 +33,17 @@ const CommentForm = () => {
   return (
     <FormWrapper onSubmit={handleSubmit}>
       <NameInput
-        placeholder="이름"
+        placeholder="姓名"
         type="text"
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
       <MessageInput
-        placeholder="메시지"
+        placeholder="留言"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
       />
-      <SubmitButton type="submit">등록</SubmitButton>
+      <SubmitButton type="submit">发送</SubmitButton>
     </FormWrapper>
   );
 };

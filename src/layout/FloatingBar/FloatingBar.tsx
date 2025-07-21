@@ -12,11 +12,11 @@ import Button from '@/components/Button.tsx';
 const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
   const { emojis } = data;
 
-  // TODO: count 기능 사용 원할시 firebase realtime db 연결!
+  // TODO: count 如果您想使用该功能，请连接到firebase实时数据库！
   // const [count, setCount] = useState(0);
 
   // useEffect(() => {
-  // TODO: realtime db 에 likes 객체 추가.
+  // TODO: realtime db 添加一个喜欢的对象。
   //   const dbRef = ref(realtimeDb, 'likes');
   //   onValue(dbRef, (snapshot) => {
   //     setCount(Number(snapshot.val()));
@@ -26,10 +26,10 @@ const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
   const handleCopy = () => {
     navigator.clipboard.writeText(window.location.href).then(
       () => {
-        alert('주소가 복사되었습니다.😉😉');
+        alert('地址已复制.😉😉');
       },
       () => {
-        alert('주소 복사에 실패했습니다.🥲🥲');
+        alert('复制地址失败.🥲🥲');
       },
     );
   };
@@ -37,7 +37,7 @@ const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
   const handleCount = () => {
     void jsConfetti.addConfetti({ emojis });
 
-    // 버튼 클릭시 likes 수 증가
+    // 点击按钮时增加点赞数
     // const dbRef = ref(realtimeDb);
     // void update(dbRef, {
     //   likes: increment(1),
@@ -57,11 +57,11 @@ const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
       </Button>
       <Button onClick={handleCopy}>
         <Share fill="#e88ca6" />
-        공유
+        分享
       </Button>
       <Button onClick={handleScroll}>
         <Upward fill="#e88ca6" />
-        위로
+        返回顶部
       </Button>
     </Nav>
   );

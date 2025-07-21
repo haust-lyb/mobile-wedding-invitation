@@ -11,15 +11,37 @@ const Invitation = () => {
       <Paragraph>{greeting.message}</Paragraph>
       <Host />
       <Caption textAlign={'center'}>{greeting.eventDetail}</Caption>
-      {/* TODO: 구글캘린더 추가하기 기능을 넣는다면 링크 수정 */}
-      <RoundButton
-        target="_blank"
-        href=""
-        rel="noreferrer">
-        구글 캘린더 추가하기
+      {/* TODO: 如果您添加添加谷歌日历的功能，请编辑链接 */}
+      <RoundButton onClick={handleAddCal}>
+        添加到日历日程
       </RoundButton>
     </InvitationWrapper>
   );
+};
+
+const handleAddCal = () => {
+  const icsContent = `BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+SUMMARY:结婚典礼
+DTSTART:20251001T140000
+DTEND:20251001T160000
+DESCRIPTION:诚邀您参加我们的结婚典礼
+LOCATION:河南省安阳市内黄县南李庄村
+END:VEVENT
+END:VCALENDAR`;
+
+  const blob = new Blob([icsContent], { type: 'text/calendar' });
+  const url = URL.createObjectURL(blob);
+
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'wedding_event.ics';
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+
+  URL.revokeObjectURL(url);
 };
 
 export default Invitation;

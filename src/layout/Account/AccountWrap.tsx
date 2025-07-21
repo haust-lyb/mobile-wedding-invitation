@@ -22,10 +22,10 @@ const AccountWrap = ({
   const handleCopy = () => {
     navigator.clipboard.writeText(account).then(
       () => {
-        alert('계좌번호가 복사되었습니다.😉😉');
+        alert('账号已复制.😉😉');
       },
       () => {
-        alert('계좌번호 복사에 실패했습니다.🥲🥲');
+        alert('账号复制失败了.🥲🥲');
       },
     );
   };

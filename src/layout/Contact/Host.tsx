@@ -31,7 +31,7 @@ const HostInfo = ({ person }: { person: BrideAndGroom }) => {
         </>
       )}
       <RelationText>
-        <div>의</div>
+        <div>的</div>
         <Relation>{person.relation}</Relation>
       </RelationText>
       <HighlightedName>{person.name}</HighlightedName>
