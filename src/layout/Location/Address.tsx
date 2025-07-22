@@ -12,11 +12,26 @@ const Address = () => {
         return (
           <Way key={title}>
             <PointTitle>{title}</PointTitle>
-            <Caption>{desc}</Caption>
+            <Caption onClick={() => handleCopy(desc)}>{desc}</Caption>
           </Way>
         );
       })}
     </WayWrapper>
+  );
+};
+
+const handleCopy = (address: string) => {
+  if (!navigator.clipboard?.writeText) {
+    alert('抱歉，您的浏览器不支持复制功能，请手动复制。');
+    return;
+  }
+  navigator.clipboard.writeText(address).then(
+    () => {
+      alert('地址已复制.😉😉');
+    },
+    () => {
+      alert('复制地址失败.🥲🥲');
+    },
   );
 };
 

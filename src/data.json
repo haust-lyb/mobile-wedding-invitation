@@ -1,38 +1,38 @@
 {
   "greeting": {
     "title": "李一博 \uD83D\uDC8D 刘晓倩\n我们结婚了!",
-    "message": "我们彼此温暖，温度刚刚好。\n在作为夫妻迈出第一步的那激动人心的时刻，\n诚挚邀请您来见证这份珍贵。",
+    "message": "秋光作序，佳节为证\n诚邀您来，见证我们的喜悦与承诺",
     "host": {
       "groom": {
-        "name": "李一博",
-        "relation": "儿子",
+        "name": "xxx",
+        "relation": "xxx",
         "parents": [
           {
-            "relation": "父亲",
-            "name": "李忠如"
+            "relation": "xxx",
+            "name": "xxx"
           },
           {
-            "relation": "母亲",
-            "name": "周焕英"
+            "relation": "xxx",
+            "name": "xxx"
           }
         ]
       },
       "bride": {
-        "name": "刘晓倩",
-        "relation": "女儿",
+        "name": "xxx",
+        "relation": "xxx",
         "parents": [
           {
-            "relation": "父亲",
-            "name": "刘秀通"
+            "relation": "xx",
+            "name": "xxx"
           },
           {
-            "relation": "母亲",
-            "name": "王爱荣"
+            "relation": "xx",
+            "name": "xxx"
           }
         ]
       }
     },
-    "eventDetail": "2025年10月01日"
+    "eventDetail": "\uD83D\uDC90\uD83D\uDC90\uD83D\uDC90--良辰吉日--\uD83D\uDC90\uD83D\uDC90\uD83D\uDC90\n2025年10月01日\n（农历八月初十）\n\uD83D\uDC90\uD83D\uDC90\uD83D\uDC90------\uD83D\uDC90\uD83D\uDC90\uD83D\uDC90\n"
   },
   "hostInfo": [
     {
@@ -87,21 +87,20 @@
     }
   ],
   "mapInfo": {
-    "address1": "Apelgamo 公德 La Robe厅",
-    "address2": "首尔 麻浦区 麻浦大路 92号\nHyosung Harrington Square B栋7楼\n02-2197-0230",
-    "naverMap": "https://map.naver.com/p/directions/-/14132311.1099497,4514956.9078363,%EC%95%84%ED%8E%A0%EA%B0%80%EB%AA%A8%20%EA%B3%B5%EB%8D%95,1929913788,PLACE_POI/-/transit?c=15.00,0,0,0,dh",
-    "kakaoMap": "https://map.kakao.com/?map_type=TYPE_MAP&target=car&rt=,,489503,1123003&rt1=&rt2=%EC%95%84%ED%8E%A0%EA%B0%80%EB%AA%A8%20%EA%B3%B5%EB%8D%95%EC%A0%90&rtIds=,630786038",
-    "lat": 37.54222,
-    "lon": 126.952708
+    "address1": "\uD83D\uDE84 高铁到达 \uD83D\uDE84 \n内黄南或濮阳东",
+    "address2": "\uD83D\uDE97 自驾到达 \uD83D\uDE97 \n河南省安阳市内黄县梁庄镇南李庄村",
+    "key": "8e5bb78233212fd9e1510a517ac8142f",
+    "lat": 114.797369,
+    "lon": 35.683089
   },
   "locationInfo": [
     {
-      "title": "📍 地铁",
-      "desc": "👉🏻 5·6号线 公德站 7号出口（步行2分钟）\n👉🏻 京义·中央线、机场铁道 公德站 10号出口（步行30秒）"
+      "title": "\uD83D\uDE84 高铁",
+      "desc": "内黄南 或者 濮阳东,优选内黄南"
     },
     {
-      "title": "📍 停车指引",
-      "desc": "👉🏻 建筑内3-5层 免费停车2小时\n（请在接待台领取停车券）"
+      "title": "\uD83D\uDE97 自驾",
+      "desc": "河南省安阳市内黄县梁庄镇南李庄村"
     }
   ],
   "emojis": [

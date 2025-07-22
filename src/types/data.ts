@@ -40,10 +40,7 @@ export interface IHostInfo {
 }
 
 export interface IMapInfo {
-  address1: string;
-  address2: string;
-  naverMap: string;
-  kakaoMap: string;
+  key: string;
   lat: number;
   lon: number;
 }

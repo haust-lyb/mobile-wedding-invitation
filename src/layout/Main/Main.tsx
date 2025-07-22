@@ -8,7 +8,7 @@ const Main = () => {
     <div>
       <MainImg src={mainImg} />
       <MainTitle>{greeting.title}</MainTitle>
-      <SubTitle>{greeting.eventDetail}</SubTitle>
+      {/*<SubTitle>{greeting.eventDetail}</SubTitle>*/}
     </div>
   );
 };
@@ -30,9 +30,9 @@ const MainTitle = styled.p`
   white-space: pre-line;
 `;
 
-const SubTitle = styled.p`
-  font-size: 1.1rem;
-  color: #2F2120;
-  line-height: 140%;
-  white-space: pre-line;
-`;
+// const SubTitle = styled.p`
+//   font-size: 1.1rem;
+//   color: #2F2120;
+//   line-height: 140%;
+//   white-space: pre-line;
+// `;

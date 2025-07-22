@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import data from 'data.json';
 import Address from './Address.tsx';
-import Map from './Map.tsx';
+import Map from './AMapComponent.tsx';
 import MapButtons from './MapButtons.tsx';
 import { Caption, PointTitle } from '@/components/Text.tsx';
 

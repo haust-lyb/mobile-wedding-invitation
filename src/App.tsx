@@ -5,9 +5,11 @@ import Wrapper from '@/components/Wrapper.tsx';
 import Container from '@/layout/Container.tsx';
 import FloatingBar from '@/layout/FloatingBar/FloatingBar.tsx';
 import GalleryWrap from '@/layout/Gallery/GalleryWrap.tsx';
-import Guestbook from '@/layout/Guestbook/Guestbook.tsx';
+// import Guestbook from '@/layout/Guestbook/Guestbook.tsx';
 import Invitation from '@/layout/Invitation/Invitation.tsx';
+import AMapComponent from '@/layout/Location/AMapComponent.tsx';
 import Main from '@/layout/Main/Main.tsx';
+// import styled from '@emotion/styled';
 
 function App() {
   // const ncpClientId = import.meta.env.VITE_APP_NAVERMAPS_CLIENT_ID;
@@ -53,12 +55,12 @@ function App() {
         {/*</Wrapper>*/}
         <Wrapper>
           <Heading1>来访路线</Heading1>
-          <div>待实现</div>
+          <AMapComponent></AMapComponent>
         </Wrapper>
-        <Wrapper>
-          <Heading1>给新郎新娘的话</Heading1>
-          <Guestbook />
-        </Wrapper>
+        {/*<Wrapper>*/}
+        {/*  <Heading1>给新郎新娘的话</Heading1>*/}
+        {/*  <Guestbook />*/}
+        {/*</Wrapper>*/}
         <FloatingBar isVisible={isVisible} />
       </Container>
   );
